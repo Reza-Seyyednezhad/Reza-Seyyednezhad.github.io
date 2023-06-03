@@ -1,0 +1,273 @@
+::selection {
+    background-color: rgba(58, 71, 80, 1);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    position: relative;
+    overflow: hidden;
+}
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+}
+.mid-level-sticker {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    text-decoration: none;
+    color: crimson;
+    font-weight: 900;
+    font-family: cursive;
+    font-size: 0.8rem;
+    background-color: #f6c90e;
+    border-radius: 8px;
+    padding: 5px;
+}
+.resume-file {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    text-decoration: none;
+    font-weight: 900;
+    font-family: cursive;
+    font-size: 0.8rem;
+    background-color: rgb(58, 71, 80);
+    color: #f6c90e;
+    border-radius: 8px;
+    padding: 5px;
+    text-decoration: none;
+}
+.resume-file:hover {
+    background-color: #ffee04;
+    color: #303841;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background: rgb(58, 71, 80, 0.07);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.4px);
+    -webkit-backdrop-filter: blur(4.4px);
+    border: 1px solid #f6c90e;
+}
+.card header {
+    border-radius: 50%;
+    border: 2px solid #f6c90e;
+    padding: 2px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    margin: 10px;
+}
+.card header .profile-image-container {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.profile-image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+}
+.profile-image-container:hover .img-profile-1 {
+    opacity: 0;
+}
+.profile-image-container:hover .img-profile-2 {
+    opacity: 1;
+}
+.img-profile-1 {
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.img-profile-2 {
+    opacity: 0;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.card header img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: contain;
+}
+.card main .user-info {
+    text-align: center;
+    margin: 10px;
+}
+.user-info .user-name {
+    font-family: "Dancing Script", cursive;
+    text-shadow: 2px 2px 2px #8d840cc5;
+    color: #f6c90e;
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+    word-wrap: break-word;
+}
+.user-info .time-setting {
+    font-family: "Signika Negative", sans-serif;
+    color: #f6c90e;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+}
+.user-info .user-city {
+    font-family: "Signika Negative", sans-serif;
+    color: #f6c90e;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    word-wrap: break-word;
+}
+.user-info .summary-skills {
+    font-family: "Signika Negative", sans-serif;
+    color: #f6c90e;
+    word-wrap: break-word;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+.user-info .contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-section .contact-btn {
+    padding: 12px;
+    border-radius: 50%;
+    color: #f6c90e;
+    background-color: rgb(58, 71, 80, 0.07);
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 2px solid #f6c90e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-section .contact-btn:hover {
+    background-color: rgba(58, 71, 80, 0.747);
+}
+.contact-btn i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.contact-section .contact-box {
+    display: flex;
+    padding: 15px;
+    border-radius: 50%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.contact-box a {
+    text-decoration: none;
+    color: #f6c90e;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    margin: 0 5px;
+}
+.contact-box a:hover {
+    transform: scale(2);
+}
+.card footer {
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(189, 186, 8, 0.452);
+    border-radius: 0 0 10px 10px;
+}
+.card footer .skills-tags-header {
+    font-family: "Signika Negative", sans-serif;
+    color: #f6c90e;
+    font-size: 1.1rem;
+    word-wrap: break-word;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.card footer .skills-tags {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    border-top: 3px solid rgb(58, 71, 80, 0.25);
+    margin: 8px;
+}
+.skills-tags span {
+    padding: 5px;
+    background-color: rgb(58, 71, 80, 0.5);
+    font-family: "Signika Negative", sans-serif;
+    font-size: 0.7rem;
+    margin: 5px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.skills-tags span:hover {
+    transform: scale(1.2);
+}
+@media screen and (max-width: 325px) {
+    .card {
+        width: 100%;
+    }
+}
+@media screen and (min-width: 325px) {
+    .card {
+        width: 90vw;
+    }
+}
+@media screen and (max-width: 576px) {
+    .user-info .user-name {
+        font-size: 1.8rem;
+    }
+    .user-info .time-setting {
+        font-size: 1.2rem;
+    }
+    .user-info .user-city {
+        font-size: 0.8rem;
+    }
+    .user-info .summary-skills {
+        font-size: 0.9rem;
+    }
+    .card footer .skills-tags-header {
+        font-size: 0.9rem;
+    }
+    .contact-btn i {
+        font-size: 0.8rem;
+    }
+    .contact-btn i {
+        font-size: 0.8rem;
+    }
+    .contact-section .contact-btn {
+        padding: 8px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .card {
+        width: 60vw;
+    }
+}
+@media screen and (min-width: 992px) {
+    .card {
+        width: 50vw;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .card {
+        width: 40vw;
+    }
+}
