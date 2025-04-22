@@ -25,8 +25,8 @@ let nights_URLs = [
 ];
 let morning_hours = [05, 06, 07, 08, 09, 10, 11, 12];
 let afternoon_hours = [13, 14, 15, 16];
-let evening_hours = [17, 18, 19, 20];
-let night_hours = [21, 22, 23, 00, 01, 02, 03, 04, 05];
+let evening_hours = [17, 18, 19];
+let night_hours = [20, 21, 22, 23, 00, 01, 02, 03, 04, 05];
 let nights_time = [18, 19, 20, 21, 22, 23, 00, 01, 02, 03, 04];
 let days_time = [06, 07, 08, 09, 10, 11, 12, 13, 14, 15, 16, 17];
 fetch("./data.json")
